@@ -1267,6 +1267,8 @@ These coefficients seem reasonable -- in general, heavier dinos were less agile 
 
 ## [Using Matrix Multiplication](https://en.wikipedia.org/wiki/Matrix_multiplication)
 
+![](images/Matrix.jpg)
+
 We can make things quite a bit neater...
 
 Take a look at the inner-most calculation we're doing to get the predictions:
