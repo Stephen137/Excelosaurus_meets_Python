@@ -19,7 +19,7 @@ The aim of this project is :
 
 I created my own dataset in Excel from my son's favourite dino book.
 
-<img src="Dinozaur.jpg" style="width:400px;height:400px"/>
+<img src="images/Dinozaur.jpg" style="width:400px;height:400px"/>
 
 ## Set path
 
