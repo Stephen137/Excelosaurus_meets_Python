@@ -1,10 +1,3 @@
----
-title: "Excelosaurus meets Python"
-author: "Stephen Barrie"
-date: "2022-11-18"
-categories: [fastai]
-image: "python.jpg"
----
 This is my follow up to [***Lesson 5: Practical Deep Learning for Coders 2022***](https://www.youtube.com/watch?v=_rXzeWq4C6w) in which Jeremy builds a linear regresson model and neural net from scratch using Python.
 
 
@@ -45,7 +38,7 @@ pd.set_option('display.width', 140)
 
 The starting point for this project is the csv file that I created as part of my Lesson 3 project to build a linear model and neural network from scratch within Excel.  See my earlier post titled ***Excelosaurus***.
 
-![Features.PNG](attachment:3d825e94-c96d-4c3a-8550-70446c121297.PNG)
+![](images/Features.PNG)
 
 The data is in the form of a table, as a Comma Separated Values (CSV) file. We can open it using the [***pandas***](https://pandas.pydata.org/docs/index.html) library, which will create a [***DataFrame***](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html).
 
@@ -272,7 +265,7 @@ dinos ['Max_weight'].hist();
 
 
     
-![png](output_30_0.png)
+![](images/output_30_0.png)
     
 
 
@@ -303,7 +296,7 @@ dinos ['Max_weight'].hist()
 
 
     
-![png](output_35_1.png)
+![](images/output_35_1.png)
     
 
 
@@ -324,7 +317,7 @@ dinos ['Min_Weight'].hist()
 
 
     
-![png](output_37_1.png)
+![](images/output_37_1.png)
     
 
 
@@ -921,6 +914,8 @@ def calc_loss(coeffs, indeps, deps): return torch.abs(calc_preds(coeffs, indeps)
 
 ## Doing a gradient descent step
 
+![](images/Gradient_Descent.jpg)
+
 In this section, we're going to do a single "epoch" of gradient descent manually. The only thing we're going to automate is calculating gradients, because let's face it that's pretty tedious and entirely pointless to do by hand! To get PyTorch to calculate gradients, we'll need to call requires_grad_() on our coeffs (if you're not sure why, review the previous notebook, How does a neural net really work?, before continuing):
 
 
@@ -1204,7 +1199,7 @@ sympy.plot("1/(1+exp(-x))", xlim=(-5,5));
 
 
     
-![png](output_119_0.png)
+![](images/output_119_0.png)
     
 
 
@@ -1511,7 +1506,7 @@ The main takeaway from this project, apart from hanging out with my son, and fin
 - clean the data using Python and carry out some Exploratory Data Analysis (EDA)
 - use Broadcasting to carry out matrix multiplicaiton
 
- <img src="Matrix.jpg" style="width:200px;height:200px"/>
+ <img src="images/Matrix.jpg" style="width:200px;height:200px"/>
 
 - create a real deep learning model from scratch using Python and train it
 
